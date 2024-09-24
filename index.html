@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <script src="https://unpkg.com/canvas-datagrid@0.22.12/dist/canvas-datagrid.js"></script>
+    <script language="javascript">
+      window.addEventListener("load", () => initializeView(document.body));
+
+      function initializeView(parent) {
+        var grid = canvasDatagrid();
+        parent.appendChild(grid);
+        grid.data = [
+          { col1: 'row 1 column 1', col2: 'row 1 column 2', col3: 'row 1 column 3' },
+          { col1: 'row 2 column 1', col2: 'row 2 column 2', col3: 'row 2 column 3' },
+        ];
+      }
+    </script>
+</head>
+<body>
+</body>
+</html>
